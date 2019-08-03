@@ -1,0 +1,15 @@
+numb=int(input())
+apec=list(map(int,input().split()))
+ptr=[]
+qtr=[]
+for i in range(len(apec)):
+	if i%2==0:
+		ptr.append(apec[i])
+	else:
+		qtr.append(apec[i])
+s=sum(ptr)
+r=sum(qtr)
+if(s>r):
+	print(s)
+else:
+	print(r)
